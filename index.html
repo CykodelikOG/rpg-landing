@@ -242,6 +242,65 @@
     text-align: center;
   }
 
+  /* ── Dimensional tagline ── */
+  .dimensional-tagline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 40px;
+    user-select: none;
+    pointer-events: none;
+  }
+  .dim-row {
+    line-height: 1;
+    font-family: var(--serif);
+    text-align: center;
+  }
+  .dim-row.r1 {
+    font-size: clamp(8px, 1.2vw, 11px);
+    letter-spacing: 0.55em;
+    text-transform: uppercase;
+    color: var(--muted);
+    opacity: 0.45;
+    margin-bottom: 4px;
+    font-family: var(--mono);
+  }
+  .dim-row.r2 {
+    font-size: clamp(10px, 1.5vw, 13px);
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    opacity: 0.3;
+    font-style: italic;
+    margin-bottom: 2px;
+  }
+  .dim-row.r3 {
+    font-size: clamp(36px, 7vw, 72px);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: 0.85;
+    font-weight: 400;
+    text-shadow: 0 0 30px rgba(0,200,160,0.12);
+    margin-bottom: 2px;
+  }
+  .dim-row.r4 {
+    font-size: clamp(10px, 1.5vw, 13px);
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    opacity: 0.3;
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+  .dim-row.r5 {
+    font-size: clamp(13px, 2.2vw, 20px);
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: var(--ring);
+    opacity: 0.5;
+    font-family: var(--mono);
+  }
+
   /* ── Site badge ── */
   .site-badge {
     font-family: var(--mono);
@@ -439,6 +498,14 @@
 <!-- Content -->
 <div class="page">
 
+  <div class="dimensional-tagline">
+    <div class="dim-row r1">w &nbsp; o &nbsp; r &nbsp; l &nbsp; d &nbsp; s</div>
+    <div class="dim-row r2">upon</div>
+    <div class="dim-row r3">worlds</div>
+    <div class="dim-row r4">upon</div>
+    <div class="dim-row r5">worlds</div>
+  </div>
+
   <div class="site-badge">// shiftrpg.com</div>
 
   <h1 class="game-title">SHIFT</h1>
@@ -447,7 +514,7 @@
   <p class="tagline">Tabletop Roleplaying Game</p>
 
   <p class="hero-statement">
-    You are not the hero.<br>You are you.
+    You start as you.<br>You become the hero.
   </p>
 
   <p class="pitch">
@@ -464,7 +531,7 @@
     </div>
     <div class="pillar">
       <div class="pillar-label">// The World Spin Table</div>
-      <div class="pillar-text">Every dimension generated at the table. No two sessions the same.</div>
+      <div class="pillar-text">Dice and imagination. GMs generate entire dimensions in minutes. Endless campaign variation.</div>
     </div>
     <div class="pillar">
       <div class="pillar-label">// One System</div>
