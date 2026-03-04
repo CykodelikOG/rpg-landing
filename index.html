@@ -496,6 +496,36 @@
     opacity: 0.6;
   }
 
+  /* ── Coming soon nav ── */
+  .coming-soon-nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .cs-item {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--dim);
+    opacity: 0.5;
+    cursor: default;
+    user-select: none;
+  }
+  .cs-item::before {
+    content: '// ';
+    color: var(--dim);
+    opacity: 0.6;
+  }
+  .cs-item span {
+    color: var(--muted);
+    opacity: 0.4;
+    font-size: 8px;
+    margin-left: 6px;
+  }
+
   /* ── Responsive ── */
   @media (max-width: 600px) {
     .pillars { flex-direction: column; align-items: stretch; max-width: 340px; }
@@ -565,6 +595,12 @@
     <div class="status-label">// Status</div>
     <div class="status-value">In Development</div>
     <div class="status-detail">core rules &nbsp;·&nbsp; world system &nbsp;·&nbsp; character design</div>
+  </div>
+
+  <div class="coming-soon-nav">
+    <div class="cs-item">Community<span>coming soon</span></div>
+    <div class="cs-item">DLC Supplements<span>coming soon</span></div>
+    <div class="cs-item">Play Reports<span>coming soon</span></div>
   </div>
 
   <a class="support-link" href="https://buymeacoffee.com/cykodelik" target="_blank" rel="noopener">
